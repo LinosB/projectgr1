@@ -35,6 +35,10 @@ nav ul li a{
 nav ul li a:hover{
     color: #DE7C7D;
 }
+.active{
+    color:#DE7C7D;
+    text-decoration: underline;
+}
 .login-button{
     text-decoration: none;
     color: #740938;
@@ -57,4 +61,25 @@ nav ul li a:hover{
 .signup-button:hover{
     background-image: linear-gradient(90deg, #AF1740, #740938);
     border-radius: 20px;
+}
+.content{
+    margin-top: 15%;
+    max-width: 600px;
+}
+.content h1{
+    color: #222;
+}
+.content p{
+    color: #222;
+    margin-top: 20px;
+}
+.content a{
+    margin-top: 20px;
+}
+.image1{
+    position: absolute;
+    width: 300px;
+    bottom: 30%;
+    right: 10%;
+    border-radius: 30px;
 }
