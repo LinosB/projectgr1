@@ -22,7 +22,7 @@
             </div>
         </nav>  
         <div class="container">
-            <form class="animation">
+            <form onsubmit="sendEmail(); return false" class="animation">
                 <h2>Get In Touch</h2>
                 <input type="text" id="name" placeholder="Full Name" required>
                 <input type="email" id="email" placeholder="E-Mail" required>
@@ -31,5 +31,29 @@
                 <button type="submit">Send Message </button>
             </form>
         </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "linos.berisha15@gmail.com",
+                    Password : "430D798CE919E1B1F02F94467DFA15ED0BBC",
+                    To : 'linos.berisha14@gmail.com',
+                    From : 'linos.berisha14@gmail.com',
+                    Subject : "New Contact Request",
+                    Body : "Name: "+ document.getElementById("name").value
+                        +"<br> Email: "+ document.getElementById("email").value
+                        +"<br> Phone Number: "+ document.getElementById("phone").value
+                        +"<br> Message: "+ document.getElementById("textarea").value
+                }).then(
+                message => alert('Message Was Sent Successfully')
+                ).catch(
+                error => {
+                    console.error("Error sending email: ", error);
+                    alert("Failed to send the message. Please try again later.");
+                }
+            );
+            }
+        </script>
 </body>
 </html>

@@ -66,6 +66,7 @@ form{
     display: flex;
     flex-direction: column;
     padding: 5% 5%;
+    margin-top: 10%;
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
