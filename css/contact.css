@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-image:linear-gradient(rgba(90, 25, 30, 0.8),rgba(90, 25, 30, 0.8)), url(photos/slide1.jpg);
+    background-image:linear-gradient(rgba(90, 25, 30, 0.8),rgba(90, 25, 30, 0.8)), url(/photos/slide1.jpg);
     background-position: center;
     background-size: cover;
     position:relative;
