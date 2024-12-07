@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="login.js" defer></script>
     <link rel="stylesheet" href="signup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,15 +22,16 @@
         </nav>
         <div class="form-box">
             <h1>Log In</h1>
-            <form>
+            <div id="error"></div>
+            <form id="form">
                 <div class="input-group">
                     <div class="input-field">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="E-Mail">
+                        <input id="email" type="email" placeholder="E-Mail">
                     </div>
                     <div class="input-field">
                         <i class="fa-solid fa-lock-open"></i>
-                        <input type="password" placeholder="Password">
+                        <input id="password" type="password" placeholder="Password">
                     </div>
                 </div>
                 <p>You don't have an account? <a href="signup.html">Sign Up</a></p>
