@@ -27,16 +27,15 @@ if(!isset($_SESSION['username'])){
                 <li><a href="social.html">Social Page</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <div>
-                <a class="login-button" href="login.html">Log In</a>
-                <a class="signup-button" href="signup.html">Sign Up</a>
+            <div class="welcome">
+                <p>Welcome, <span><?= $_SESSION['username']; ?></span></p>
+                <a onclick="window.location.href='logout.php'">Log Out</a>
             </div>
         </nav>
         <div class="content">
             <div class="text">
                 <h1 class="animation">Welcome <br>To Your Ultimate <br> Fitness Hub!</h1>
                 <p class="animation">Whether you're a seasoned gym-goer or just starting your journey,<br> we’ve got you covered with the best gear and community support. <br> Explore top-notch equipment and connect with a passionate <br> community of fitness enthusiasts. Together, we’ll help you crush your <br> goals and redefine your limits!"</p>
-                <a class="signup-button animation" href="signup.html">Sign Up</a>
             </div>
         <div class="slider animation">
             <div class="slides">

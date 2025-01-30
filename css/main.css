@@ -34,15 +34,14 @@ nav ul li a:hover{
     color:#DE7C7D;
     text-decoration: underline;
 }
-.login-button{
-    text-decoration: none;
-    color: #740938;
-    margin-right: 10px;
+.welcome{
+    display: flex;
 }
-.login-button:hover{
-    color: #DE7C7D;
+.welcome p{
+    align-content: center;
+    color: #270381;
 }
-.signup-button{
+.welcome a{
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -52,8 +51,9 @@ nav ul li a:hover{
     border-radius: 15px;
     border-top-right-radius: 0px;
     transition: 0.5s;
+    margin-left: 10px;
 }
-.signup-button:hover{
+.welcome a:hover{
     background-image: linear-gradient(90deg, #AF1740, #740938);
     border-radius: 20px;
 }
