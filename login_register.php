@@ -97,7 +97,7 @@ if (isset($_POST['login'])) {
         
         $_SESSION['username'] = $_POST['username']; 
 
-        header("Location: " . ($role === 'admin' ? "dashboard.php" : "home.php"));
+        header("Location: " . ($role === 'admin' ? "admin-page.php" : "home.php"));
     } else {
         $_SESSION['login_error'] = 'Incorrect username or password!';
         header("Location: login.php");
