@@ -234,3 +234,36 @@ nav ul li a:hover{
 .show-posts .box-container .box .caption{
     margin-top: 10px;
 }
+.users .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    justify-content: center;
+    gap: 15px;
+    max-width: 100%;
+    margin:0 auto;
+    align-items: flex-start;
+ }
+ 
+ .users .box-container .box{
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+ }
+ 
+ .users .box-container .box p{
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: #9c9b9b;
+ }
+ 
+ .users .box-container .box p span{
+    color: #008DDA;
+ }
+ 
+ .users .box-container .box .delete-btn{
+    margin-top: 0;
+ }
+ 

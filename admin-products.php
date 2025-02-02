@@ -119,7 +119,7 @@ if (isset($_GET['delete'])) {
         <li><a href="admin-page.php">Home</a></li>
         <li><a href="admin-products.php" class="active">Products</a></li>
         <li><a href="admin-social.php">Social Page</a></li>
-        <li><a href="users-social.php">Users</a></li>
+        <li><a href="users.php">Users</a></li>
         <li><a href="admin-messages.php">Messages</a></li>
     </ul>
     <div class="welcome">

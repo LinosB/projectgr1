@@ -22,10 +22,10 @@ if(!isset($_SESSION['username'])){
         <nav>
             <img class="logo" src="photos/logo.png" alt="Logo">
             <ul>
-                <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="social.html">Social Page</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="home.php" class="active">Home</a></li>
+                <li><a href="store.php">Store</a></li>
+                <li><a href="social.php">Social Page</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
             </ul>
             <div class="welcome">
                 <p>Welcome, <span><?= $_SESSION['username']; ?></span></p>

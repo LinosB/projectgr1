@@ -120,3 +120,26 @@ form button:hover{
         transform: translateY(0px);
     }
 }
+.welcome{
+    display: flex;
+}
+.welcome p{
+    align-content: center;
+    color: white;
+}
+.welcome a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 13px 30px;
+    background-image: linear-gradient(45deg, #008DDA, #ACE2E1);
+    font-size: 14px;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.welcome a:hover{
+    background-image: linear-gradient(90deg, #ACE2E1, #008DDA);
+    border-radius: 20px;
+}

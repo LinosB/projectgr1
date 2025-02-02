@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['username'])){
+    header("Location: login.php");
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,19 +17,19 @@
     <title>Contact Us</title>
 </head>
 <body>
-        <nav>
-            <img class="logo" src="photos/logo-white.png" alt="Logo">
+    <nav>
+        <img class="logo" src="photos/logo-white.png" alt="Logo">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="social.html">Social Page</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="store.php">Store</a></li>
+                <li><a href="social.php">Social Page</a></li>
+                <li><a href="contact.php" class="active">Contact Us</a></li>
             </ul>
-            <div>
-                <a class="login-button" href="login.html">Log In</a>
-                <a class="signup-button" href="signup.html">Sign Up</a>
+            <div class="welcome">
+                <p>Welcome, <span><?= $_SESSION['username']; ?></span></p>
+                <a onclick="window.location.href='logout.php'">Log Out</a>
             </div>
-        </nav>  
+        </nav>
         <div class="container">
             <form onsubmit="sendEmail(); return false" class="animation">
                 <h2>Get In Touch</h2>
