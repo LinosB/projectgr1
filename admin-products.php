@@ -71,7 +71,7 @@ class Product {
 }
 
 
-$db = new Database("localhost", "root", "", "your_database_name");
+$db = new Database("localhost", "root", "", "users_db");
 $product = new Product($db);
 
 
