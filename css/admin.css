@@ -104,3 +104,103 @@ nav ul li a:hover{
     font-size: 20px;
     border: 1.5px solid black;
 }
+.add-products form{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 10%;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    max-width: 100%;
+    margin: 0 20%;
+}
+.add-products form h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.add-products form .box{
+    width: 80%;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 12px 15px;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+}
+.error-message {
+    padding: 12px;
+    background: #f8d7da;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #AF1740;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.success-message {
+    padding: 12px;
+    background: #cdffc9;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #12841a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.empty{
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+    font-size: 20px;
+}
+.show-products .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax 200px);
+    justify-content: center;
+    gap: 30px;
+    max-width: 100%;
+    padding: 5%;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+.show-products .box-container .box{
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid black;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+.show-products .box-container .box img{
+    height: 200px;
+}
+.show-products .box-container .box .name{
+    padding: 10px 0;
+    font-size: 20px;
+    color: black;
+}
+.show-products .box-container .box .price{
+    padding: 10px 0;
+    font-size: 25px;
+    color: #AF1740;
+}
+.delete-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 13px 30px;
+    background-image: linear-gradient(45deg, #AF1740, #5f061e);
+    font-size: 14px;
+    border: none;
+    border-radius: 15px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.delete-btn:hover{
+    background-image: linear-gradient(45deg, #5f061e, #AF1740);
+}
